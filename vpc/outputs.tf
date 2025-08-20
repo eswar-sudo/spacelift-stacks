@@ -23,7 +23,17 @@ output "igw_id" {
   value       = module.vpc-modules.igw_id
 }
 
-#output "route_table_ids" {
-#  description = "IDs of the route tables"
- # value       = module.vpc-modules.route_table_ids
-#}
+output "eip_ids" {
+  description = "List of EIP IDs"
+    value = module.vpc-modules.eip_ids
+  }
+
+output "public_route_table_ids" {
+  description = "List of public RT IDs"
+  value = module.vpc-modules.public_route_table_ids
+}
+
+   output "private_route_table_ids" {
+     description = "List of private RT IDs"
+     value = module.vpc-modules.private_route_table_ids
+ }
