@@ -5,7 +5,7 @@ module "eks" {
   # Required inputs
   ami_type           = "AL2023_x86_64_STANDARD"
   capacity_type      = "ON_DEMAND"
-  cluster_name       = "eks-dns"
+  cluster_name       = "dns-alb"
   cluster_version    = "1.33"
   coredns_version    = "v1.11.4-eksbuild.2"
   desired_size       = 2
