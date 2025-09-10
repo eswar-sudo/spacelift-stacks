@@ -57,6 +57,6 @@ module "iam-role-kafka" {
   name               = "dcli-kafka-role-test"
 
   # Optional inputs
-  managed_policy_arns = arn:aws:iam::aws:policy/service-role/AmazonEBSCSIDriverPolicy
+  managed_policy_arns = ["arn:aws:iam::aws:policy/service-role/AmazonEBSCSIDriverPolicy"]
   # path                = string
 }
