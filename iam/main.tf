@@ -1,4 +1,4 @@
-module "iampolicy" {
+module "iam-policy-external-dns" {
   source  = "spacelift.io/eswar-sudo/iampolicy/default"
   version = "0.1.0"
 
@@ -10,7 +10,7 @@ module "iampolicy" {
   # description = string
 }
 
-module "iamrole" {
+module "iam-role-external-dns" {
   source  = "spacelift.io/eswar-sudo/iamrole/default"
   version = "0.1.0"
 
@@ -23,7 +23,7 @@ module "iamrole" {
   # path                = string
 }
 
-module "iampolicy" {
+module "iam-policy-alb-controller" {
   source  = "spacelift.io/eswar-sudo/iampolicy/default"
   version = "0.1.0"
 
@@ -35,7 +35,7 @@ module "iampolicy" {
   # description = string
 }
 
-module "iamrole" {
+module "iam-role-alb-controller" {
   source  = "spacelift.io/eswar-sudo/iamrole/default"
   version = "0.1.0"
 
@@ -48,7 +48,7 @@ module "iamrole" {
   # path                = string
 }
 
-module "iamrole" {
+module "iam-role-kafka" {
   source  = "spacelift.io/eswar-sudo/iamrole/default"
   version = "0.1.0"
 
