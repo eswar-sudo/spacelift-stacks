@@ -17,9 +17,9 @@ module "iam-role-external-dns" {
   # Required inputs
   assume_role_policy = jsondecode(file("external_dns_assume_role_policy.json"))
   name               = "external-dns-irsa-test"
+  managed_policy_arns = [module.iam-policy-external-dns.arn]
 
   # Optional inputs
-  # managed_policy_arns = list(string)
   # path                = string
 }
 
@@ -42,9 +42,9 @@ module "iam-role-alb-controller" {
   # Required inputs
   assume_role_policy = jsondecode(file("alb_controller_assume_role_policy.json"))
   name               = "alb-controller-role-test"
+  managed_policy_arns = [module.iam-policy-alb-controller.arn]
 
   # Optional inputs
-  # managed_policy_arns = list(string)
   # path                = string
 }
 
