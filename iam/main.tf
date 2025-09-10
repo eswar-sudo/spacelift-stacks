@@ -1,3 +1,7 @@
+provider "aws" {
+  region = "us-east-1"
+}
+
 module "iam-policy-external-dns" {
   source  = "spacelift.io/eswar-sudo/iampolicy/default"
   version = "0.1.0"
