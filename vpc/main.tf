@@ -12,5 +12,5 @@ module "vpc-modules" {
   region                         = "us-east-1"
   single_nat_gateway             = true
   vpc_cidr                       = "30.0.0.0/16"
-  vpc_name                       = "stack-testing"
+  vpc_name                       = "eks-alb"
 }
