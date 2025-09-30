@@ -18,12 +18,12 @@ module "eks" {
   max_size           = 3
   min_size           = 1
   node_group_name    = "linux-ng"
-  private_subnet_ids = ["subnet-0355dd555830e6f85", "subnet-0fdf5acc9d0b5e9f5"]
-  region             = "us-east-1"
+  private_subnet_ids = ["subnet-064c76d9bfc0f9687", "subnet-06e8ee78284fae47e"]
+  region             = "ap-south-1"
   tags               = {
     Environment = "dev"
     Terraform   = "true"
     }
   vpc_cni_version    = "v1.19.6-eksbuild.1"
-  vpc_id             = "vpc-04f8fda9d23e6309f"
+  vpc_id             = "vpc-0611307ff5503eb69"
 }
